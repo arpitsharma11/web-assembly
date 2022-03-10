@@ -6,7 +6,7 @@ const VideoTest = () => {
 
     const recorder = useRef();
     const liveFeed = useRef();
-    const video = useRef();
+    // const video = useRef();
 
     const [res, setResult] = useState();
 
@@ -30,7 +30,7 @@ const VideoTest = () => {
         
     }
 
-    const handleStop = () => {}
+    // const handleStop = () => {}
 
     useEffect(() => {
         navigator.mediaDevices.getUserMedia({
@@ -79,7 +79,7 @@ const VideoTest = () => {
                 <>
                     <div>VideoTest 
                     <button onClick={handleStart}>Start</button> 
-                    <button disabled onClick={handleStart}>Stop</button>
+                    {/* <button disabled onClick={handleStart}>Stop</button> */}
                     </div>
                     <br />
                     <br />
